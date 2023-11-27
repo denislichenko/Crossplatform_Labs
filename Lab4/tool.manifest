@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tool>
+    <commands>
+        <command name="Lab4" filename="Lab4.dll" />
+    </commands>
+</tool>
