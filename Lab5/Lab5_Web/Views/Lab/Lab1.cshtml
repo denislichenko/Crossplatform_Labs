@@ -1,0 +1,27 @@
+﻿@model List<int>
+
+@{
+    ViewData["Title"] = "Lab1";
+}
+
+<h1>Lab1</h1>
+
+
+
+<form method="post" enctype="multipart/form-data">
+    <div>
+        <label for="file">Upload File:</label>
+        <input type="file" name="file" id="file" />
+    </div>
+    <button type="submit">Submit</button>
+</form>
+
+
+@if(Model != null && Model.Count > 0)
+{
+    <h2>Response: </h2>
+    foreach(var item in Model)
+    {
+        <p>@item</p>
+    }
+}

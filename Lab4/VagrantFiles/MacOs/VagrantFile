@@ -22,7 +22,7 @@ Vagrant.configure("2") do |config|
     sudo mkdir -p -m 775 /usr/local/bin
     sudo ln -s /usr/local/share/dotnet/dotnet /usr/local/bin/
     dotnet tool install --global --version 1.0.0 --add-source http://192.168.0.106:5555/v3/index.json --no-cache Lab4
-    sudo ln -s /usr/local/share/dlichenko /usr/local/bin/
+    sudo ln -s /usr/local/share/Lab4 /usr/local/bin/
     SHELL
 
 end

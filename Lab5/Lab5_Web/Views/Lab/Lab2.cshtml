@@ -1,0 +1,23 @@
+﻿@model long
+
+@{
+    ViewData["Title"] = "Lab1";
+}
+
+<h1>Lab2</h1>
+
+
+
+<form method="post" enctype="multipart/form-data">
+    <div>
+        <label for="file">Upload File:</label>
+        <input type="file" name="file" id="file" />
+    </div>
+    <button type="submit">Submit</button>
+</form>
+
+
+@if (Model > 0)
+{
+    <h2>Response: @Model</h2>
+}

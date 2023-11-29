@@ -1,0 +1,24 @@
+﻿@model string
+
+@{
+    ViewData["Title"] = "Lab3";
+}
+
+<h1>Lab3</h1>
+
+
+
+<form method="post" enctype="multipart/form-data">
+    <div>
+        <label for="file">Upload File:</label>
+        <input type="file" name="file" id="file" />
+    </div>
+    <button type="submit">Submit</button>
+</form>
+
+
+@if (!string.IsNullOrEmpty(Model))
+{
+    <h2>Response:</h2>
+    <p>@Model</p>
+}
